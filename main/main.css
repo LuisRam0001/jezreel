@@ -30,15 +30,15 @@
     font-weight: 600;
   }
 
-  .navbar a{
+  .navbar1 a{
     font-size:18px ;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
   }
-  .navbar a:hover,
-  .navbar a.active{
+  .navbar1 a:hover,
+  .navbar1 a.active{
     color: #00abf0;
   }
   .home{
