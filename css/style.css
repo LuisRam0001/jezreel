@@ -127,7 +127,7 @@ main .sobre-nosotros{
 
 
 .portafolio{
-    background: #d81212;
+    background: #e0bbf2;
 }
 
 .galeria-port{
@@ -250,7 +250,7 @@ main .sobre-nosotros{
 /* footer */
 
 footer{
-    background: #414141;
+    background: #d8bdec;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -423,4 +423,11 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+}
+.container-menu-registro{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    height: 100vh;
+    
 }
