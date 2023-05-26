@@ -2,12 +2,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --border: 3px solid aquamarine;
 }
 
 body {
-    font-family: 'open sans';
+    font-family: 'open sans';   
 }
 
+/* ------------------------------------------------------------------------------ */
+/* menu peincipal*/
+
+
+
+.logo{
+    
+        display: flex;
+        justify-content: space-between;
+        height: 100px  }
+
+
+
+#main{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-top: 30PX;
+}
+
+#item{
+
+    position: relative;
+    
+}
+
+#item::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    border-radius: 20%;
+}
+
+#item:hover::before{
+    animation: animateIn 400ms ease-in-out forwards;
+}
+
+#item::before{
+    animation: animateOut 400ms ease-in-out forwards;
+}
+
+@keyframes animateIn {
+    0%{
+        border-right: var(--border);
+        border-left: var(--border);
+        width: 0%;
+        left: 50%;
+    }
+    100%{
+        border-right: var(--border);
+        border-left: var(--border);
+        width: 130%;
+        left: -20%;
+    }
+}
+
+@keyframes animateOut {
+    0% {
+        border-right: var(--border);
+        border-left: var(--border);
+        width: 130%;
+        left: -20%;
+    }
+    60%{
+        border-right: var(--border);
+        border-left: var(--border);
+        width: 0%;
+        left: 50%;
+    }
+    100% {
+        
+        width: 0%;
+        left: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------ */
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -42,7 +130,12 @@ header {
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    columns: 4px;
 }
+
 
 nav > a{
     color:#70c352;
@@ -82,7 +175,7 @@ header .textos-header{
     width: 100%;
 }
 
-/* About us */
+/* Sobre nosotros */
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
