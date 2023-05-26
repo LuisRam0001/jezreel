@@ -6,25 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JEZREEL</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="IMG/Tecno.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body> 
     <header>
         <nav>
-        <div class="logo">
-            <img src="IMG/Tecno.png" alt="">    
-        </div>
-        
-            <a id="item" href="#">Inicio</a>
-            <a id="item" href="#">Nosotros</a>
-            <a id="item" href="#">Portafolio</a>
-            <a id="item" href="#">Servicios</a>
-            <a id="item" href="#">Contacto</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a>
+                <img src="IMG/Tecno.png" alt="" class="logo">
+            </a>
+            <ul class="nav">
+                <li><a id="item" href="#">Inicio</a></li>
+                <li><a id="item" href="#">Nosotros</a>
+                    <ul>
+                        <li><a id="item" href="#">Nosotros</a></li>
+                        <li><a id="item" href="#">Nosotros</a></li>
+                    </ul>
+                </li>
+                <li><a id="item" href="#">Servicios</a></li>
+                <li><a id="item" href="#">Portafolio</a></li>
+                <li><a id="item" href="#">Contacto</a></li>
+            </ul>
         </nav>
+        
         <section class="textos-header">
             <h1>Tenemos todo para su negocio </h1>
             <h2>Con una página web a tu medida</h2>
@@ -159,6 +171,9 @@
     </main>
     <footer>
         <div class="contenedor-footer">
+            <iframe width="1000" height="300" frameborder="0"
+                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Bogot%C3%A1+(colombia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe>
             <div class="content-foo">
                 <h4>Phone</h4>
                 <p>8296312</p>
